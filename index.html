@@ -21,7 +21,7 @@
                     <a class="header-item link current " href="./index.html">Студія</a>
                 </li>
                 <li class="header-details">
-                    <a class="header-item link   " href="./portfolio.html">Портфоліо</a>
+                    <a class="header-item link" href="./portfolio.html">Портфоліо</a>
                 </li>
                 <li class="header-details">
                     <a class="header-item link" href="">Контакти</a>
@@ -49,9 +49,62 @@
             <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
+                    <form class="form">
+                        <p class="form-inform">
+                            Залишайте свої данні, ми вам передзвонимо
+                        </p>
+                       <div class="form-field">
+                            <label for="name">Имя</label>
+                            <div class="form-input-wrapper">
+                                <input class="input-details" type="text" name="name" id="name" placeholder=" " />
+                                <svg class="form-field-icon" width="18px" height="18px">
+                                    <use href="./images/symbol-defs.svg#icon-Name-contact">
+                                    </use>
+                                </svg>
+                            </div>
+                       </div>
+                        <div class="form-field">
+                            <label for="tel">Телефон</label>
+                            <div class="form-input-wrapper">
+                                <input class="input-details" type="tel" name="tel" id="tel" placeholder=" " />
+                                <svg class="form-field-icon" width="18px" height="18px">
+                                    <use href="./images/symbol-defs.svg#icon-Phone">
+                                    </use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Пошта</label>
+                            <div class="form-input-wrapper">
+                                <input class="input-details" type="email" name="email" id="email" placeholder=" " />
+                                <svg class="form-field-icon" width="18px" height="18px">
+                                    <use href="./images/symbol-defs.svg#icon-Email">
+                                    </use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label for="comment">Коментар</label>
+                            <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
+                        </div>
+                        <div class="form-field">
+                            <div class="polocy-aligh">
+                                <input class="policy-check visually-hidden" type="checkbox" name="policy" id="policy" />
+                                <label class="label-policy" for="policy">
+                                    <span class="policy-ckeck-modal">
+                                        <svg  width="11px" height="8px">
+                                            <use href="./images/symbol-defs.svg#icon-Vector-1">
+                                            </use>
+                                        </svg>
+                                    </span>Погоджуюся з розсилкрю та приймаю<a class="contract-details-link"
+                                        href=" ">Умови договору </a> </label>
+                            </div>
+                        </div>
+                        <button class="button-form" type="submit">Відправити</button>
+                    </form>
                     <button type="button" class="close" data-modal-close>
-                        <svg  width="18px" height="18px" >
-                            <use href="./images/symbol-defs.svg#icon-close-black">
+                        <svg width="11px" height="11px">
+                            <use href="./images/symbol-defs.svg#icon-Vector-2-2">
                             </use>
                         </svg>
                     </button>
@@ -397,6 +450,18 @@
                 </li>
             </ul>
         </div>
+        <form class="footer-form">
+            <div class="footer-field">
+                <label for="email">Підпишись на розсилку</label>
+                <input class="footer-input-details" type="email" name="email-footer" id="email" placeholder="E-mail" />
+            </div>
+            <button class="footer-button" type="submit">Підписатися
+            <svg class="footer-button-icon" width="24px" height="24px">
+                <use href="./images/symbol-defs.svg#icon-icon-send">
+                </use>
+            </svg>
+            </button>
+        </form>
    </div>
 </footer>
 <script src="./js/modal.js"></script>
